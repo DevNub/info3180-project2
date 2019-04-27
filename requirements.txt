@@ -21,3 +21,4 @@ Flask-Principal==0.4.0
 Flask-BabelEx==0.9.3
 Flask-JWT==0.3.2
 Babel==2.5.3
+Mako==1.0.7

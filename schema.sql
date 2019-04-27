@@ -43,3 +43,20 @@ create table follows(
 	primary key (follows_id),
 	foreign key (user_id) references users(user_id) on delete cascade on update cascade
 );
+
+/* Dummy data /
+insert into table users (user_id, username, password, firstname, lastname, email, location, biography, profile_photo, joined_on)
+values ('20190029', 'test1', 'password', 'ari', 'jones', 'drejay@email.com', 'Kingston', 'my bio here', './app/static/images/profiles/Ari', '2019-04-04');
+
+insert into table users (user_id, username, password, firstname, lastname, email, location, biography, profile_photo, joined_on)
+values ('20190283', 'test2', 'password', 'john', 'doe', 'johndoe@email.com', 'Kingston', '', '', '2019-04-20');
+
+
+insert into table posts (post_id, user_id, photo, caption, created_on)
+values ('profile', '20190029', './app/static/images/uploads/profile', 'My Photo', '2019-04-24');
+
+
+insert into table follows (follows_id, user_id, follower_id)
+values ('0237', '20190029', '20190283');
+
+/* */
